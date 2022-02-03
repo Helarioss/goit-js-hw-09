@@ -49,7 +49,6 @@ function startTimer(event) {
     const time = convertMs(timesDifferent);
 
     Object.keys(time).forEach(key => (refs[key].textContent = addLeadingZero(time[key])));
-    console.log(timesDifferent);
 
     if (timesDifferent <= 0) {
       clearInterval(intervalId);
